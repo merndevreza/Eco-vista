@@ -1,9 +1,11 @@
+import WeatherComponent from "@/components/WeatherComponent";
 
-const WeatherPage = () => {
+const WeatherPage = ({
+   params: { location },
+   searchParams: { latitude, longitude },
+ }) => {
    return (
-      <div>
-         Weather Page
-      </div>
+      <WeatherComponent  lat={latitude} lon={longitude} />
    );
 };
 

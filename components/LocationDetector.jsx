@@ -22,7 +22,7 @@ const LocationDetector = () => {
         router.push(`/current?${params.toString()}`);
       });
     }
-  }, [pathname,searchParams]);
+  }, [pathname,router,searchParams]);
 
   return (
     <div className="flex w-full justify-center items-center h-screen">
